@@ -16,22 +16,10 @@ function AboutCard() {
             I have completed Diploma in Government PolyTechnic College, Thiruvannamalai.<br /><span className="purple"> Diploma Computer Engineering</span>
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
-          </p>
-          <ul>
-{/*             <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li> */}
-            <li className="about-activity">
-              <ImPointRight /> Yoga
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-          </ul>
+</p>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Programming is the art of Algorithm Design"{" "}
+            "Every great app starts with a single line of code"
           </p>
           <footer className="blockquote-footer">Ragavan</footer>
         </blockquote>

@@ -19,6 +19,16 @@ import Ecom2 from "../../Assets/Projects/ecom2.jpeg";
 import Ecom3 from "../../Assets/Projects/ecom3.jpeg";
 import Ecom4 from "../../Assets/Projects/ecom4.jpeg";
 
+import Bank1 from "../../Assets/Projects/bank1.jpeg";
+import Bank2 from "../../Assets/Projects/bank2.jpeg";
+import Bank3 from "../../Assets/Projects/bank3.jpeg";
+import Bank4 from "../../Assets/Projects/bank4.jpeg";
+import Bank5 from "../../Assets/Projects/bank5.jpeg";
+
+import Str1 from "../../Assets/Projects/str1.jpeg";
+import Str2 from "../../Assets/Projects/str2.jpeg";
+import Str3 from "../../Assets/Projects/str3.jpeg";
+
 function Projects() {
 
   const [index, setIndex] = useState(0);
@@ -32,6 +42,19 @@ function Projects() {
   const handleSelect2 = (selectedIndex2) => {
     setIndex2(selectedIndex2);
   };
+
+  const [index3, setIndex3] = useState(0);
+
+  const handleSelect3 = (selectedIndex3) => {
+    setIndex3(selectedIndex3);
+  };
+
+  const [index4, setIndex4] = useState(0);
+
+  const handleSelect4 = (selectedIndex4) => {
+    setIndex4(selectedIndex4);
+  };
+
 
   return (
     
@@ -119,12 +142,157 @@ Responsive UI
                   style={{ marginLeft: "10px", width:"100%" }}
                 >
                   <BsGithub /> &nbsp;
-                  {"Source Code"}
+                  {"GitHub"}
                 </Button></Col>
                 
     </Row>
 
     </Row>
+
+
+{/* ==================================Banking project =================================== */}
+
+    <h2 className="project-heading" style={{marginTop:40}}>
+       Banking Website
+        </h2>
+     
+<Row>
+    <Col md={7} className="project-card">
+    <Carousel activeIndex={index3} onSelect={handleSelect3}>
+      <Carousel.Item>
+      <img
+         className="d-block w-100"
+          src={Bank1}
+          alt="First slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+      <img
+         className="d-block w-100"
+          src={Bank2}
+          alt="First slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+      <img
+          className="d-block w-100"
+          src={Bank3}
+          alt="First slide"
+        />
+
+      </Carousel.Item>
+      <Carousel.Item>
+      <img
+          className="d-block w-100"
+          src={Bank5}
+          alt="First slide"
+        />
+
+      </Carousel.Item>
+      <Carousel.Item>
+      <img
+          className="d-block w-100"
+          src={Bank4}
+          alt="First slide"
+        />
+
+      </Carousel.Item>
+    </Carousel>
+ </Col>
+ <Col className="d-flex justify-content-center align-items-center project-card">
+    <p style={{ color: "white",textAlign:"justify"}}>
+    <b className="purple">Tech</b><br/>
+    Spring Boot, MySQL
+    <br/><br/>
+    <b className="purple">Features</b><br/>
+    Store User Details, Login authentication
+    </p>
+ 
+</Col>
+<Row>
+
+<Col>
+
+    
+      <Button
+                  variant="primary"
+                  href={"https://github.com/ragavanperarasu/Spring_Porjects"}
+                  target="_blank"
+                  style={{ marginLeft: "10px", width:"100%",marginBottom:10 }}
+                >
+                  <BsGithub /> &nbsp;
+                  {"GitHub"}
+                </Button></Col>
+                
+    </Row>
+
+    </Row>
+
+    {/* ======================streaming website=================================== */}
+
+    <h2 className="project-heading" style={{marginTop:40}}>
+       Streaming Website
+        </h2>
+     
+<Row>
+    <Col md={7} className="project-card">
+    <Carousel activeIndex={index4} onSelect={handleSelect4}>
+      <Carousel.Item>
+      <img
+         className="d-block w-100"
+          src={Str1}
+          alt="First slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+      <img
+         className="d-block w-100"
+          src={Str2}
+          alt="First slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+      <img
+          className="d-block w-100"
+          src={Str3}
+          alt="First slide"
+        />
+
+      </Carousel.Item>
+      
+    </Carousel>
+ </Col>
+ <Col className="d-flex justify-content-center align-items-center project-card">
+    <p style={{ color: "white",textAlign:"justify"}}>
+    <b className="purple">Tech</b><br/>
+    React, NodeJs
+    <br/><br/>
+    <b className="purple">Feature</b><br/>
+    Video Streaming
+    </p>
+ 
+</Col>
+<Row>
+
+<Col>
+
+    
+      <Button
+                  variant="primary"
+                  href={"https://github.com/ragavanperarasu/NodeJS_Projects"}
+                  target="_blank"
+                  style={{ marginLeft: "10px", width:"100%",marginBottom:10 }}
+                >
+                  <BsGithub /> &nbsp;
+                  {"GitHub"}
+                </Button></Col>
+                
+    </Row>
+
+    </Row>
+
+    {/* ====================react appps ========================= */}
+
 
 
     <h2 className="project-heading" style={{marginTop:40}}>
@@ -174,7 +342,7 @@ Responsive UI
                   variant="primary"
                   href={"https://youtube.com/shorts/sGBjENiLsRs?si=oIyb7SHgGAnSfU7m"}
                   target="_blank"
-                  style={{ marginLeft: "10px", width:"100%"}}
+                  style={{ marginLeft: "10px", width:"100%", marginBottom:10}}
                 >
                   <CgYoutube /> &nbsp;
                   {"Maths Game"}
@@ -202,7 +370,7 @@ Responsive UI
                   style={{ marginLeft: "10px", width:"100%"}}
                 >
                   <CgYoutube /> &nbsp;
-                  {"Age Calculator"}
+                  {"Age Calc"}
                 </Button>
                 
                 </Col>
@@ -213,15 +381,18 @@ Responsive UI
                   variant="primary"
                   href={"https://github.com/ragavanperarasu/React_Native_Projects.git"}
                   target="_blank"
-                  style={{ marginLeft: "10px", width:"100%" }}
+                  style={{ marginLeft: "10px", width:"100%",marginBottom:10 }}
                 >
                   <BsGithub /> &nbsp;
-                  {"Source Code"}
+                  {"GitHub"}
                 </Button></Col>
                 
     </Row>
 
     </Row>
+
+
+
     
 
        
