@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://ragavan.vercel.app/</loc>
+    <image:image>
+      <image:loc>https://ragavan.vercel.app/ragavan.jpg</image:loc>
+      <image:caption>Ragavan M Portfolio Profile</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ragavan.vercel.app/mygct.jpg</image:loc>
+      <image:caption>My GCT Hub App Screenshot</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://ragavan.vercel.app/about</loc>
+    <image:image>
+      <image:loc>https://ragavan.vercel.app/ragavan.jpg</image:loc>
+      <image:caption>Ragavan M - About</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Project Page -->
+  <url>
+    <loc>https://ragavan.vercel.app/project</loc>
+    <image:image>
+      <image:loc>https://ragavan.vercel.app/project1.jpg</image:loc>
+      <image:caption>React Native Chatbot Project</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ragavan.vercel.app/project2.jpg</image:loc>
+      <image:caption>GCT Hub Project Screenshot</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Resume Page -->
+  <url>
+    <loc>https://ragavan.vercel.app/resume</loc>
+  </url>
+
+  <!-- Certificate Page -->
+  <url>
+    <loc>https://ragavan.vercel.app/certificate</loc>
+  </url>
+
+</urlset>
