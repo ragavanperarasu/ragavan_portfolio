@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/my2.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -40,7 +39,7 @@ I'm currently studying <b className="purple">3<sup>rd</sup> year B.E. Computer S
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="ragavan" style={{borderRadius:'10%'}}/>
+              <img src={"./ragavan.jpg"} className="img-fluid" alt="ragavan gct" style={{borderRadius:'10%'}}/>
             </Tilt>
           </Col>
         </Row>
