@@ -28,13 +28,6 @@ import Str1 from "../../Assets/Projects/str1.jpeg";
 import Str2 from "../../Assets/Projects/str2.jpeg";
 import Str3 from "../../Assets/Projects/str3.jpeg";
 
-import Apphome from "../../Assets/Projects/play/home.png";
-import Appclub from "../../Assets/Projects/play/club.png";
-import Appmess from "../../Assets/Projects/play/mes.png";
-import Appprofile from "../../Assets/Projects/play/probile.png";
-import Appatt from "../../Assets/Projects/play/att.png";
-import Apppin from "../../Assets/Projects/play/attpin.png";
-import Appattview from "../../Assets/Projects/play/attview.png";
 
 
 function Projects() {
@@ -83,53 +76,60 @@ function Projects() {
     <Carousel activeIndex={index2} onSelect={handleSelect2}>
       <Carousel.Item>
       <img
-          src={Apphome}
-          alt="First slide"
+          src={"./mygcthub/my_gct_home_screen_ragavan.png"}
+          alt="My GCT Hub app home screen by Ragavan M"
           style={{width:'30%'}}
+          loading="lazy"
         />
       </Carousel.Item>
       <Carousel.Item>
       <img
-          src={Appclub}
-          alt="First slide"
+          src={"./mygcthub/my_gct_attendance_screen_ragavan.png"}
+          alt="My GCT Hub app club screen by Ragavan M"
           style={{width:'30%'}}
+          loading="lazy"
         />
       </Carousel.Item>
       <Carousel.Item>
       <img
-          src={Appmess}
-          alt="First slide"
+          src={"./mygcthub/my_gct_club_screen_ragavan.png"}
+          alt="My GCT Hub app message screen by Ragavan M"
           style={{width:'30%'}}
+          loading="lazy"
         />
 
       </Carousel.Item>
             <Carousel.Item>
       <img
-          src={Appprofile}
-          alt="First slide"
+          src={"./mygcthub/my_gct_message_screen_ragavan.png"}
+          alt="My GCT Hub app profile screen by Ragavan M"
           style={{width:'30%'}}
+          loading="lazy"
         />
       </Carousel.Item>
       <Carousel.Item>
       <img
-          src={Appatt}
-          alt="First slide"
+          src={"./mygcthub/my_gct_pin_screen_ragavan.png"}
+          alt="My GCT Hub app attendance screen by Ragavan M"
           style={{width:'30%'}}
+          loading="lazy"
         />
       </Carousel.Item>
       <Carousel.Item>
       <img
-          src={Apppin}
-          alt="First slide"
+          src={"./mygcthub/my_gct_post_screen_ragavan.png"}
+          alt="My GCT Hub app pin enter screen by Ragavan M"
           style={{width:'30%'}}
+          loading="lazy"
         />
 
       </Carousel.Item>
             <Carousel.Item>
       <img
-          src={Appattview}
-          alt="First slide"
+          src={"./mygcthub/my_gct_profile_screen_ragavan.png"}
+          alt="My GCT Hub app attendance view screen by Ragavan M"
           style={{width:'30%'}}
+          loading="lazy"
         />
 
       </Carousel.Item>
@@ -193,21 +193,24 @@ function Projects() {
       <img
          className="d-block w-100"
           src={Ecom4}
-          alt="First slide"
+          alt="E-Commerce webapp home screen by Ragavan M"
+          loading="lazy"
         />
       </Carousel.Item>
       <Carousel.Item>
       <img
          className="d-block w-100"
           src={Ecom2}
-          alt="First slide"
+          alt="E-Commerce webapp product screen by Ragavan M"
+          loading="lazy"
         />
       </Carousel.Item>
       <Carousel.Item>
       <img
           className="d-block w-100"
           src={Ecom3}
-          alt="First slide"
+          alt="E-Commerce webapp login screen by Ragavan M"
+          loading="lazy"
         />
 
       </Carousel.Item>
@@ -215,7 +218,8 @@ function Projects() {
       <img
           className="d-block w-100"
           src={Ecom1}
-          alt="First slide"
+          alt="E-Commerce webapp product list screen by Ragavan M"
+          loading="lazy"
         />
 
       </Carousel.Item>
@@ -282,21 +286,24 @@ Responsive UI
       <img
          className="d-block w-100"
           src={Bank1}
-          alt="First slide"
+          alt="Banking webapp home screen by Ragavan M"
+          loading="lazy"
         />
       </Carousel.Item>
       <Carousel.Item>
       <img
          className="d-block w-100"
           src={Bank2}
-          alt="First slide"
+          alt="Banking webapp login screen by Ragavan M"
+          loading="lazy"
         />
       </Carousel.Item>
       <Carousel.Item>
       <img
           className="d-block w-100"
           src={Bank3}
-          alt="First slide"
+          alt="Banking webapp login status screen by Ragavan M"
+          loading="lazy"
         />
 
       </Carousel.Item>
@@ -304,7 +311,8 @@ Responsive UI
       <img
           className="d-block w-100"
           src={Bank5}
-          alt="First slide"
+          alt="Banking webapp new user screen by Ragavan M"
+          loading="lazy"
         />
 
       </Carousel.Item>
@@ -312,7 +320,8 @@ Responsive UI
       <img
           className="d-block w-100"
           src={Bank4}
-          alt="First slide"
+          alt="Banking webapp db screen by Ragavan M"
+          loading="lazy"
         />
 
       </Carousel.Item>
@@ -361,6 +370,7 @@ Responsive UI
          className="d-block w-100"
           src={Str1}
           alt="First slide"
+          loading="lazy"
         />
       </Carousel.Item>
       <Carousel.Item>
@@ -368,6 +378,7 @@ Responsive UI
          className="d-block w-100"
           src={Str2}
           alt="First slide"
+          loading="lazy"
         />
       </Carousel.Item>
       <Carousel.Item>
@@ -375,6 +386,7 @@ Responsive UI
           className="d-block w-100"
           src={Str3}
           alt="First slide"
+          loading="lazy"
         />
 
       </Carousel.Item>
@@ -426,6 +438,7 @@ Responsive UI
          className="d-block w-100"
           src={maths}
           alt="First slide"
+          loading="lazy"
         />
       </Carousel.Item>
       <Carousel.Item>
@@ -433,6 +446,7 @@ Responsive UI
          className="d-block w-100"
           src={age}
           alt="First slide"
+          loading="lazy"
         />
       </Carousel.Item>
       <Carousel.Item>
@@ -440,6 +454,7 @@ Responsive UI
           className="d-block w-100"
           src={todo}
           alt="First slide"
+          loading="lazy"
         />
 
       </Carousel.Item>
