@@ -40,7 +40,7 @@ I'm currently studying <b className="purple">3<sup>rd</sup> year B.E. Computer S
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" style={{borderRadius:'10%'}}/>
+              <img src={myImg} className="img-fluid" alt="ragavan" style={{borderRadius:'10%'}}/>
             </Tilt>
           </Col>
         </Row>
