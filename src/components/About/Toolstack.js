@@ -1,11 +1,9 @@
-import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
 SiAndroid, SiLinux, SiPostman, SiGithub, SiOllama,
 SiOpenai,
 SiAndroidstudio,
 SiAmazonec2,
-SiAmazons3
 } from "react-icons/si";
 import {
 DiVisualstudio

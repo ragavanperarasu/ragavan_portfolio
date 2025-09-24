@@ -1,9 +1,8 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 import Particle from "../Particle";
 import Button from "react-bootstrap/Button";
-import { CgWebsite, CgYoutube } from "react-icons/cg";
+import { CgYoutube, CgPlayButton } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
 import maths from "../../Assets/Projects/app1.png";
@@ -28,6 +27,15 @@ import Bank5 from "../../Assets/Projects/bank5.jpeg";
 import Str1 from "../../Assets/Projects/str1.jpeg";
 import Str2 from "../../Assets/Projects/str2.jpeg";
 import Str3 from "../../Assets/Projects/str3.jpeg";
+
+import Apphome from "../../Assets/Projects/play/home.png";
+import Appclub from "../../Assets/Projects/play/club.png";
+import Appmess from "../../Assets/Projects/play/mes.png";
+import Appprofile from "../../Assets/Projects/play/probile.png";
+import Appatt from "../../Assets/Projects/play/att.png";
+import Apppin from "../../Assets/Projects/play/attpin.png";
+import Appattview from "../../Assets/Projects/play/attview.png";
+
 
 function Projects() {
 
@@ -61,8 +69,119 @@ function Projects() {
     <Container fluid className="project-section">
       <Particle />
       <Container>
+
+         {/* ====================react appps ========================= */}
+
+
+
+    <h2 className="project-heading" style={{marginTop:40}}>
+       My GCT Hub ( In Playstore )
+        </h2>
+     
+<Row>
+    <Col md={7} className="project-card">
+    <Carousel activeIndex={index2} onSelect={handleSelect2}>
+      <Carousel.Item>
+      <img
+          src={Apphome}
+          alt="First slide"
+          style={{width:'30%'}}
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+      <img
+          src={Appclub}
+          alt="First slide"
+          style={{width:'30%'}}
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+      <img
+          src={Appmess}
+          alt="First slide"
+          style={{width:'30%'}}
+        />
+
+      </Carousel.Item>
+            <Carousel.Item>
+      <img
+          src={Appprofile}
+          alt="First slide"
+          style={{width:'30%'}}
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+      <img
+          src={Appatt}
+          alt="First slide"
+          style={{width:'30%'}}
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+      <img
+          src={Apppin}
+          alt="First slide"
+          style={{width:'30%'}}
+        />
+
+      </Carousel.Item>
+            <Carousel.Item>
+      <img
+          src={Appattview}
+          alt="First slide"
+          style={{width:'30%'}}
+        />
+
+      </Carousel.Item>
+    </Carousel>
+ </Col>
+ <Col className="d-flex justify-content-center align-items-center project-card">
+    <p style={{ color: "white",textAlign:"justify"}}>
+    <b className="purple">Tech ( Available Playstore )</b><br/>
+    React Native, Nodejs with ExpressJs, MongoDB, Firebase
+    <br/><br/>
+    <b className="purple">About</b><br/>
+    My GCT Hub is an open-source mobile app built for Government College of Technology, Coimbatore. It connects students, staff, and alumni by providing access to study materials, question papers, books, notes, and department updates. Staff can share resources through the GCT Staff app, which appear for students in My GCT. The app also supports features like notifications, semester-wise posts.
+    </p>
+ 
+</Col>
+<Row>
+<Col>
+      <Button
+                  variant="primary"
+                  href={"https://play.google.com/store/apps/details?id=com.mygcthub"}
+                  target="_blank"
+                  style={{ marginLeft: "10px", width:"100%", marginBottom:10}}
+                >
+                  <CgPlayButton /> &nbsp;
+                  {"Playstore"}
+                </Button>
+                
+                </Col>
+
+
+                <Col>
+    
+      <Button
+                  variant="primary"
+                  href={"https://github.com/ragavanperarasu/"}
+                  target="_blank"
+                  style={{ marginLeft: "10px", width:"100%",marginBottom:10 }}
+                >
+                  <BsGithub /> &nbsp;
+                  {"GitHub"}
+                </Button></Col>
+                
+    </Row>
+
+    </Row>
+
+
+
+
+      {/* ================================== */}
       
-    <h2 className="project-heading">
+    <h2 className="project-heading" style={{marginTop:100}}>
         E-Commerce Web Application
         </h2>
      

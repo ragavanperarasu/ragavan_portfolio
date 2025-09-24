@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/my2.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -23,7 +23,7 @@ function Home2() {
                   Ragavan.
                 </b>
             <br /><br />
-I'm currently studying <b className="purple">2<sup>nd</sup> year B.E. Computer Science and Engineering at Government College of Technology (GCT), Coimbatore.</b>
+I'm currently studying <b className="purple">3<sup>rd</sup> year B.E. Computer Science and Engineering at Government College of Technology (GCT), Coimbatore.</b>
 
 <br /><br />Before this, I completed my <b className="purple">Diploma in Computer Engineering.</b>
 
@@ -40,7 +40,7 @@ I'm currently studying <b className="purple">2<sup>nd</sup> year B.E. Computer S
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid" alt="avatar" style={{borderRadius:'10%'}}/>
             </Tilt>
           </Col>
         </Row>
