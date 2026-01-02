@@ -1,76 +1,44 @@
-<h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
-</h2>
-<div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
-</div>
+# 👋 Hi, I'm Ragavan
 
-<br/>
+🚀 **React Native & MERN Stack Developer | IoT Enthusiast | Cloud & Software Design Learner**
 
-<center>
+I love building apps that connect people, simplify education, and make technology more accessible.  
+Currently pursuing **Computer Science at Government College of Technology, Coimbatore**.
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge)
+---
 
-</center>
+## 🔥 About Me
+- 📱 Released apps for **GCT Staff** and **My GCT** (for BE students).  
+- 🎓 Working on **GCT Masters** (for ME students) and **Alumni features**.  
+- 🌐 Experienced in **React Native, MERN Stack, IoT, Node.js, MongoDB, MySQL**.  
+- ☁️ Exploring **Cloud Architecture & Software Design**.  
+- 🛠️ Always learning and experimenting with new technologies.
 
-<h3 align="center">
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Request Feature</a>
-</h3>
+---
 
-## TL;DR
+## 📌 Featured Projects
+- **GCT Staff & My GCT Apps** – Platform for staff to publish materials (Books, PPTs, PDFs, Notes) accessible by students.  
+- **Shopping Chatbot** – Built with **React Native, Node.js, Express, MongoDB, DeepSeek LLM (RAG framework)**.  
+- **Banking App (Java Swing + MySQL)** – Secure login and dashboard for users.  
+- **Movie Recommendation App (MERN)** – Personalized recommendations based on user interests.  
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
+👉 More projects on my repositories!
 
-## Built With
+---
 
-My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+## 🛠️ Tech Stack
+- **Frontend**: React, React Native, HTML, CSS, JavaScript  
+- **Backend**: Node.js (Express.js), PHP, Java (Swing)  
+- **Databases**: MongoDB, MySQL, Firebase  
+- **Others**: IoT, Linux (Ubuntu Server), Cloud, RAG with LLMs  
 
-This project was built using these technologies.
+---
 
-- React.js
-- Node.js
-- Express.js
-- CSS3
-- VsCode
-- Vercel
+## 📫 Connect with Me
+- 🌐 Portfolio: [mygct.org](https://mygct.org)  
+- 💼 LinkedIn: [linkedin.com/in/ragavan](https://linkedin.com)  
+- 🐙 GitHub: [github.com/your-username](https://github.com/your-username)  
 
-## Features
+---
 
-**📖 Multi-Page Layout**
-
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
-
-**📱 Fully Responsive**
-
-## Getting Started
-
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
-
-## 🛠 Installation and Setup Instructions
-
-1. Installation: `npm install`
-
-2. In the project directory, you can run: `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
-
-## Usage Instructions
-
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
-
-### Show your support
-
-Give a ⭐ if you like this website!
-
-<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+⭐️ *Always open for collaboration on exciting projects!*
