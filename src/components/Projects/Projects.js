@@ -1,8 +1,6 @@
-import { Container } from "react-bootstrap";
 import { FiExternalLink, FiArrowUpRight } from "react-icons/fi";
 import { BsGooglePlay, BsGithub } from "react-icons/bs";
 
-import Particle from "../Particle";
 import LivePreview from "./LivePreview";
 import TechStack from "./TechStack";
 import { projects } from "./projectData";
@@ -61,7 +59,7 @@ function ProjectRow({ project, index }) {
             return (
               <a
                 key={link.url}
-                className="work-btn"
+                className="btn-ink"
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -85,7 +83,7 @@ const PAGES = {
     eyebrow: "Open Source",
     title: (
       <>
-        Built free for my <strong className="purple">college</strong>
+        Built free for my <span className="accent">college</span>
       </>
     ),
     sub: "An open-source ecosystem I built and run for Government College of Technology, Coimbatore. Free for every student and staff member, no licence, no fee. Every preview below is the live site.",
@@ -94,7 +92,7 @@ const PAGES = {
     eyebrow: "Client Work",
     title: (
       <>
-        Delivered for <strong className="purple">paying clients</strong>
+        Delivered for <span className="accent">paying clients</span>
       </>
     ),
     sub: "Commissioned, paid work for real businesses — live storefronts and catalogues taking real orders and real payments, handed over with admin panels the owners run themselves.",
@@ -105,11 +103,10 @@ function Projects({ group: groupId = "mygct" }) {
   const page = PAGES[groupId];
 
   return (
-    <Container fluid className="project-section">
-      <Particle />
-      <Container className="work-container">
+    <section className="work-page">
+      <div className="shell">
         <header className="work-header">
-          <p className="work-eyebrow">{page.eyebrow}</p>
+          <span className="eyebrow">{page.eyebrow}</span>
           <h1 className="work-page-title">{page.title}</h1>
           <p className="work-page-sub">{page.sub}</p>
         </header>
@@ -129,7 +126,7 @@ function Projects({ group: groupId = "mygct" }) {
               : "Want to see how these are built?"}
           </p>
           <a
-            className="work-btn work-btn-lg"
+            className="btn-ink"
             href="https://github.com/ragavanperarasu/"
             target="_blank"
             rel="noopener noreferrer"
@@ -137,8 +134,8 @@ function Projects({ group: groupId = "mygct" }) {
             <BsGithub /> More on GitHub <FiArrowUpRight />
           </a>
         </div>
-      </Container>
-    </Container>
+      </div>
+    </section>
   );
 }
 

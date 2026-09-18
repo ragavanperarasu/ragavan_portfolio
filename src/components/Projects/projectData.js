@@ -6,7 +6,7 @@ export const TECH = {
   react: { name: "React", color: "#61DAFB" },
   reactNative: { name: "React Native", color: "#61DAFB" },
   node: { name: "Node.js", color: "#5FA04E" },
-  express: { name: "Express", color: "#ffffff" },
+  express: { name: "Express", color: "#14121a" },
   mongo: { name: "MongoDB", color: "#47A248" },
   firebase: { name: "Firebase", color: "#FFCA28" },
   nginx: { name: "Nginx", color: "#009639" },
@@ -18,7 +18,7 @@ export const TECH = {
   android: { name: "Android", color: "#3DDC84" },
   spring: { name: "Spring Boot", color: "#6DB33F" },
   mysql: { name: "MySQL", color: "#4479A1" },
-  expo: { name: "Expo", color: "#ffffff" },
+  expo: { name: "Expo", color: "#14121a" },
 };
 
 // group: "mygct" = own product suite, "client" = client work
@@ -31,7 +31,7 @@ export const projects = [
     url: "https://mygct.org",
     host: "mygct.org",
     embeddable: true,
-    accent: "#7c5cff",
+    accent: "#8338ec",
     status: "Live",
     description:
       "The core of the My GCT family. Students download semester question papers, unit test papers, notes and syllabus, filtered by department and regulation. Staff publish material from a separate console and it appears instantly for the right batch.",
@@ -51,7 +51,7 @@ export const projects = [
     url: "https://store.mygct.org",
     host: "store.mygct.org",
     embeddable: true,
-    accent: "#2f9e7e",
+    accent: "#3a86ff",
     status: "Live",
     description:
       "The official app store for Government College of Technology. Students publish the Android apps, web apps and tools they build; other students discover, download and review them — giving campus projects a real audience instead of a dead repo.",
@@ -67,7 +67,7 @@ export const projects = [
     url: "https://slides.mygct.org",
     host: "slides.mygct.org",
     embeddable: true,
-    accent: "#e0803a",
+    accent: "#fb5607",
     status: "Live",
     description:
       "A presenter uploads their PDF and gets a 4-digit code. Anyone in the room types that code on any device and the slides open in seconds — no login, no file sharing, no app install. Built for classrooms where the projector is too far to read.",
@@ -83,7 +83,7 @@ export const projects = [
     url: "https://co.mygct.org",
     host: "co.mygct.org",
     embeddable: true,
-    accent: "#3b82f6",
+    accent: "#3a86ff",
     status: "Live",
     description:
       "Turns raw CA test marks into course outcome attainment sheets. Handles CA tests, retests, assignments, CO attainment, course surveys and the PO-PSO matrix, then exports the entire workbook as a single Excel file — replacing hours of manual spreadsheet work for staff.",
@@ -101,7 +101,7 @@ export const projects = [
     // Play Store sends X-Frame-Options: SAMEORIGIN, so it cannot be iframed.
     // Renders the branded panel, which opens the real listing on click.
     embeddable: false,
-    accent: "#3DDC84",
+    accent: "#ffbe0b",
     status: "On Play Store",
     description:
       "The mobile side of My GCT, published on the Play Store. Connects students, staff and alumni — study material, attendance, club activity, department posts and push notifications, all in one app. Staff share resources from the GCT Staff app and they surface here for students.",
@@ -123,7 +123,7 @@ export const projects = [
     url: "https://thozhamobiles.com",
     host: "thozhamobiles.com",
     embeddable: true,
-    accent: "#e5484d",
+    accent: "#ff006e",
     status: "Live",
     client: "Elumalai, Madurai",
     description:
@@ -140,7 +140,7 @@ export const projects = [
     url: "https://newleader.in",
     host: "newleader.in",
     embeddable: true,
-    accent: "#f5a524",
+    accent: "#ffbe0b",
     status: "Live",
     client: "B2B supplier",
     description:
@@ -158,7 +158,7 @@ export const projects = [
     host: "onlyneedles.in",
     // Sends X-Frame-Options: DENY — cannot be iframed, renders branded panel instead.
     embeddable: false,
-    accent: "#8b5cf6",
+    accent: "#8338ec",
     status: "Live",
     client: "Pan-India e-commerce",
     description:

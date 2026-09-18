@@ -6,15 +6,21 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Freelance Developer",
-          "MERN Stack Developer",
-          "Mobile App Developer",
+          "Web Application Development",
+          "Mobile App Development",
+          "AI Automation",
+          "DevOps &amp; CI/CD",
+          "VPS Deployment",
+          "Payment Gateway Integration",
           "System Design",
           "Cyber Security",
+          "API Development",
+          "E-Commerce Platforms",
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        delay: 45,
+        deleteSpeed: 25,
       }}
     />
   );

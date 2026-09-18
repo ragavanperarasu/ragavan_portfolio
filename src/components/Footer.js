@@ -1,57 +1,44 @@
-import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-} from "react-icons/ai";
+import React from "react";
+import { Link } from "react-router-dom";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+  const year = new Date().getFullYear();
+
   return (
-    <Container fluid className="footer">
-      <Row>
-        {/* <Col md="4" className="footer-copywright">
-          <h4 className="purple">Contact Details</h4>
-          
-        </Col>
-        <br/><br/><br/><br/> */}
-      </Row>
-    
-      <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Ragavan</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} </h3>
-        </Col>
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://github.com/ragavanperarasu"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-            
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/ragavandevp/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-            
-          </ul>
-        </Col>
-      </Row>
-    </Container>
+    <footer className="site-footer">
+      <div className="shell footer-inner">
+        <p>© {year} Ragavan — Freelance developer, Coimbatore.</p>
+
+        <ul className="footer-links">
+          <li>
+            <Link to="/open-source">Open Source</Link>
+          </li>
+          <li>
+            <Link to="/client-work">Client Work</Link>
+          </li>
+          <li>
+            <a
+              href="https://github.com/ragavanperarasu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillGithub /> GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ragavandevp/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn /> LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   );
 }
 

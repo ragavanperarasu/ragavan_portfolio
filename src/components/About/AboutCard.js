@@ -5,18 +5,28 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Ragavan </span>
-            from <span className="purple"> Tiruvannamalai, TamilNadu.</span>
-            <br />
-            I am currently studying in Government College of Technology, Coimbator.<br /> <span className="purple"> BE - Computer Engineering</span>
-            <br />
-            I have completed Diploma in Government PolyTechnic College, Thiruvannamalai.<br /><span className="purple"> Diploma Computer Engineering</span>
-            <br />
-            <br />
-</p>
+          <p>
+            Hi, I'm <span className="purple">Ragavan</span> — a freelance
+            developer from{" "}
+            <span className="purple">Tiruvannamalai, Tamil Nadu</span>, now
+            based in Coimbatore.
+          </p>
+          <p>
+            I graduated with a{" "}
+            <span className="purple">
+              B.E. in Computer Science and Engineering
+            </span>{" "}
+            from Government College of Technology, Coimbatore, after completing
+            a <span className="purple">Diploma in Computer Engineering</span> at
+            Government Polytechnic College, Tiruvannamalai.
+          </p>
+          <p>
+            I build web applications, mobile apps and the infrastructure that
+            runs them — and I work directly with the people who use what I
+            build, from college students to business owners.
+          </p>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
+          <p className="quote-line">
             "Every great app starts with a single line of code"
           </p>
           <footer className="blockquote-footer">Ragavan</footer>
