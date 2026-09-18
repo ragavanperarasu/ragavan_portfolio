@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
 
 import Type from "./Type";
 import Services from "./Services";
+import Pricing from "./Pricing";
 import AboutIntro from "./AboutIntro";
 import Contact from "./Contact";
 
@@ -45,18 +46,19 @@ function Home() {
           </div>
 
           <p className="hero-lede">
-            Freelance developer working end to end — from the first sketch to a
-            deployed, monitored product your customers actually use. Web apps,
-            mobile apps, automation and the infrastructure underneath.
+            Freelance <strong>website and mobile app developer</strong> in
+            Coimbatore, working with clients across India. Websites from
+            ₹5,000 and Android apps from ₹20,000 — built end to end, from the
+            first sketch to a deployed product your customers actually use.
           </p>
 
           <div className="hero-actions">
             <a className="btn-ink" href="#contact">
               Start a project <FiArrowRight />
             </a>
-            <Link className="btn-ghost" to="/client-work">
-              See client work <FiArrowUpRight />
-            </Link>
+            <a className="btn-ghost" href="#pricing">
+              See pricing <FiArrowUpRight />
+            </a>
           </div>
 
           <div className="hero-proof">
@@ -71,6 +73,7 @@ function Home() {
       </section>
 
       <Services />
+      <Pricing />
       <AboutIntro />
       <Contact />
     </>

@@ -9,7 +9,6 @@ const LINKS = [
   { to: "/open-source", label: "Open Source" },
   { to: "/client-work", label: "Client Work" },
   { to: "/about", label: "About" },
-  { to: "/resume", label: "Resume" },
 ];
 
 function NavBar() {

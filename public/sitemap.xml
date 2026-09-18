@@ -1,51 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Homepage -->
   <url>
     <loc>https://ragavan.vercel.app/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
     <image:image>
       <image:loc>https://ragavan.vercel.app/ragavan.jpg</image:loc>
-      <image:caption>Ragavan M Portfolio Profile</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://ragavan.vercel.app/mygct.jpg</image:loc>
-      <image:caption>My GCT Hub App Screenshot</image:caption>
+      <image:caption>Ragavan — freelance web and mobile app developer, Coimbatore</image:caption>
     </image:image>
   </url>
 
-  <!-- About Page -->
+  <url>
+    <loc>https://ragavan.vercel.app/client-work</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://ragavan.vercel.app/open-source</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://ragavan.vercel.app/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
     <image:image>
       <image:loc>https://ragavan.vercel.app/ragavan.jpg</image:loc>
-      <image:caption>Ragavan M - About</image:caption>
+      <image:caption>About Ragavan — freelance developer</image:caption>
     </image:image>
-  </url>
-
-  <!-- Project Page -->
-  <url>
-    <loc>https://ragavan.vercel.app/project</loc>
-    <image:image>
-      <image:loc>https://ragavan.vercel.app/project1.jpg</image:loc>
-      <image:caption>React Native Chatbot Project</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://ragavan.vercel.app/project2.jpg</image:loc>
-      <image:caption>GCT Hub Project Screenshot</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Resume Page -->
-  <url>
-    <loc>https://ragavan.vercel.app/resume</loc>
-  </url>
-
-  <!-- Certificate Page -->
-  <url>
-    <loc>https://ragavan.vercel.app/certificate</loc>
   </url>
 
 </urlset>
