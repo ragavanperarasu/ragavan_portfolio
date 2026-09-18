@@ -98,16 +98,9 @@ export const projects = [
     tagline: "The campus app, on Play Store",
     url: "https://play.google.com/store/apps/details?id=com.mygcthub&hl=en-US",
     host: "play.google.com",
+    // Play Store sends X-Frame-Options: SAMEORIGIN, so it cannot be iframed.
+    // Renders the branded panel, which opens the real listing on click.
     embeddable: false,
-    // Screenshots already shipped in public/mygcthub/
-    shots: [
-      "/mygcthub/my_gct_home_screen_ragavan.png",
-      "/mygcthub/my_gct_attendance_screen_ragavan.png",
-      "/mygcthub/my_gct_club_screen_ragavan.png",
-      "/mygcthub/my_gct_message_screen_ragavan.png",
-      "/mygcthub/my_gct_post_screen_ragavan.png",
-      "/mygcthub/my_gct_profile_screen_ragavan.png",
-    ],
     accent: "#3DDC84",
     status: "On Play Store",
     description:
@@ -179,7 +172,7 @@ export const projects = [
 export const groups = [
   {
     id: "mygct",
-    label: "Product Suite",
+    label: "College Products",
     title: "The My GCT Family",
     blurb:
       "An open-source ecosystem I built for Government College of Technology, Coimbatore — four web products and an Android app sharing one account system and one backend.",
@@ -187,8 +180,8 @@ export const groups = [
   {
     id: "client",
     label: "Client Work",
-    title: "Built for Clients",
+    title: "Built for Paying Clients",
     blurb:
-      "Production stores and catalogues running live businesses — real orders, real payments, handed over with admin panels the owners run themselves.",
+      "Production stores and catalogues running live businesses — real orders, real payments, delivered on contract and handed over with admin panels the owners run themselves.",
   },
 ];

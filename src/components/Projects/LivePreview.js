@@ -7,13 +7,13 @@ import { BsGooglePlay } from "react-icons/bs";
  *
  * Sites that allow embedding get a real, scaled-down iframe loaded lazily
  * once the card scrolls into view. Sites that block framing (X-Frame-Options)
- * and the Play Store app fall back to a branded panel / screenshot strip.
+ * fall back to a branded panel.
  */
 function LivePreview({ project }) {
+  const isPlayStore = project.host === "play.google.com";
   const holderRef = useRef(null);
   const [visible, setVisible] = useState(false);
   const [loaded, setLoaded] = useState(false);
-  const [shot, setShot] = useState(0);
 
   // Only mount the iframe once the preview is near the viewport.
   useEffect(() => {
@@ -39,21 +39,9 @@ function LivePreview({ project }) {
     return () => observer.disconnect();
   }, []);
 
-  // Cycle the phone screenshots for the Play Store app.
-  useEffect(() => {
-    if (!project.shots || !visible) return undefined;
-    const timer = setInterval(
-      () => setShot((current) => (current + 1) % project.shots.length),
-      2600
-    );
-    return () => clearInterval(timer);
-  }, [project.shots, visible]);
-
-  const isApp = Boolean(project.shots);
-
   return (
     <div
-      className={`preview-frame${isApp ? " preview-frame-app" : ""}`}
+      className="preview-frame"
       style={{ "--accent": project.accent }}
       ref={holderRef}
     >
@@ -69,26 +57,12 @@ function LivePreview({ project }) {
           rel="noopener noreferrer"
           aria-label={`Open ${project.title} in a new tab`}
         >
-          {isApp ? <BsGooglePlay /> : <FiExternalLink />}
+          {isPlayStore ? <BsGooglePlay /> : <FiExternalLink />}
         </a>
       </div>
 
       <div className="preview-body">
-        {isApp && (
-          <div className="preview-shots">
-            {project.shots.map((src, i) => (
-              <img
-                key={src}
-                src={src}
-                alt={`${project.title} screen ${i + 1}`}
-                className={`preview-shot${i === shot ? " is-active" : ""}`}
-                loading="lazy"
-              />
-            ))}
-          </div>
-        )}
-
-        {!isApp && project.embeddable && (
+        {project.embeddable && (
           <>
             {visible && (
               <iframe
@@ -123,7 +97,7 @@ function LivePreview({ project }) {
           </>
         )}
 
-        {!isApp && !project.embeddable && (
+        {!project.embeddable && (
           <a
             className="preview-fallback"
             href={project.url}
@@ -134,7 +108,15 @@ function LivePreview({ project }) {
             <strong>{project.title}</strong>
             <span className="preview-fallback-note">{project.tagline}</span>
             <span className="preview-veil-cta">
-              Open live site <FiExternalLink />
+              {isPlayStore ? (
+                <>
+                  View on Play Store <BsGooglePlay />
+                </>
+              ) : (
+                <>
+                  Open live site <FiExternalLink />
+                </>
+              )}
             </span>
           </a>
         )}
