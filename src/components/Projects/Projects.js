@@ -86,7 +86,7 @@ const PAGES = {
         Built free for my <span className="accent">college</span>
       </>
     ),
-    sub: "An open-source ecosystem I built and run for Government College of Technology, Coimbatore. Free for every student and staff member, no licence, no fee. Every preview below is the live site.",
+    sub: "Work I give away — the My GCT ecosystem I built and run for Government College of Technology, Coimbatore, free for every student and staff member, plus this portfolio itself. Every preview below is the live site.",
   },
   client: {
     eyebrow: "Client Work",

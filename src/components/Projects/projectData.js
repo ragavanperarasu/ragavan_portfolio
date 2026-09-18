@@ -167,15 +167,43 @@ export const projects = [
     tech: ["react", "node", "express", "mongo", "razorpay"],
     links: [{ type: "site", label: "Visit Site", url: "https://onlyneedles.in" }],
   },
+  {
+    id: "portfolio",
+    group: "mygct",
+    title: "This Portfolio",
+    tagline: "The site you're looking at right now",
+    url: "https://ragavan.vercel.app",
+    host: "ragavan.vercel.app",
+    // Embedding this site inside itself would recurse; show the panel.
+    embeddable: false,
+    accent: "#ff006e",
+    status: "Live",
+    description:
+      "My own site, open source like the rest. Built with React and React Router on a custom light-theme design system — no template. Each project card embeds the real live site in a browser frame rather than a screenshot, so what you see is never out of date.",
+    highlights: [
+      "Live iframe previews, lazy-loaded",
+      "Custom design system, no UI kit",
+      "Schema.org SEO & service pricing",
+    ],
+    tech: ["react", "bootstrap", "js"],
+    links: [
+      { type: "site", label: "Visit Site", url: "https://ragavan.vercel.app" },
+      {
+        type: "github",
+        label: "Source",
+        url: "https://github.com/ragavanperarasu/ragavan_portfolio",
+      },
+    ],
+  },
 ];
 
 export const groups = [
   {
     id: "mygct",
-    label: "College Products",
-    title: "The My GCT Family",
+    label: "Open Source",
+    title: "Free & Open Source Work",
     blurb:
-      "An open-source ecosystem I built for Government College of Technology, Coimbatore — four web products and an Android app sharing one account system and one backend.",
+      "The My GCT ecosystem I built for Government College of Technology, Coimbatore — four web products and an Android app on one backend — plus this portfolio. All free, all source-available.",
   },
   {
     id: "client",

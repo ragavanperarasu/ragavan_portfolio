@@ -6,6 +6,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const LINKS = [
   { to: "/", label: "Home" },
+  { to: "/", label: "Pricing", hash: "pricing" },
   { to: "/open-source", label: "Open Source" },
   { to: "/client-work", label: "Client Work" },
   { to: "/about", label: "About" },
@@ -17,16 +18,14 @@ function NavBar() {
   const { pathname } = useLocation();
   const navigate = useNavigate();
 
-  // "Hire me" scrolls to the contact block, navigating home first if needed.
-  const goToContact = (event) => {
+  // Scrolls to a section on the home page, navigating there first if needed.
+  const goToSection = (id) => (event) => {
     event.preventDefault();
     updateExpanded(false);
     if (pathname === "/") {
-      document
-        .getElementById("contact")
-        ?.scrollIntoView({ behavior: "smooth" });
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     } else {
-      navigate("/", { state: { scrollTo: "contact" } });
+      navigate("/", { state: { scrollTo: id } });
     }
   };
 
@@ -61,21 +60,32 @@ function NavBar() {
 
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
-            {LINKS.map((link) => (
-              <Nav.Item key={link.to}>
-                <Nav.Link
-                  as={Link}
-                  to={link.to}
-                  className={pathname === link.to ? "active-link" : undefined}
-                  onClick={() => updateExpanded(false)}
-                >
-                  {link.label}
-                </Nav.Link>
-              </Nav.Item>
-            ))}
+            {LINKS.map((link) =>
+              link.hash ? (
+                <Nav.Item key={link.label}>
+                  <Nav.Link
+                    href={`#${link.hash}`}
+                    onClick={goToSection(link.hash)}
+                  >
+                    {link.label}
+                  </Nav.Link>
+                </Nav.Item>
+              ) : (
+                <Nav.Item key={link.label}>
+                  <Nav.Link
+                    as={Link}
+                    to={link.to}
+                    className={pathname === link.to ? "active-link" : undefined}
+                    onClick={() => updateExpanded(false)}
+                  >
+                    {link.label}
+                  </Nav.Link>
+                </Nav.Item>
+              )
+            )}
 
             <Nav.Item className="nav-cta">
-              <Nav.Link href="#contact" onClick={goToContact}>
+              <Nav.Link href="#contact" onClick={goToSection("contact")}>
                 Hire me
               </Nav.Link>
             </Nav.Item>

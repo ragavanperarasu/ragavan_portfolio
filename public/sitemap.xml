@@ -4,33 +4,39 @@
 
   <url>
     <loc>https://ragavan.vercel.app/</loc>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://ragavan.vercel.app/ragavan.jpg</image:loc>
-      <image:caption>Ragavan — freelance web and mobile app developer, Coimbatore</image:caption>
+      <image:title>Ragavan — freelance web and mobile app developer</image:title>
+      <image:caption>Freelance website and mobile app developer in Coimbatore, Tamil Nadu</image:caption>
     </image:image>
   </url>
 
   <url>
     <loc>https://ragavan.vercel.app/client-work</loc>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://ragavan.vercel.app/open-source</loc>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://ragavan.vercel.app/about</loc>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://ragavan.vercel.app/ragavan.jpg</image:loc>
-      <image:caption>About Ragavan — freelance developer</image:caption>
+      <image:title>About Ragavan</image:title>
+      <image:caption>Ragavan, freelance developer based in Coimbatore</image:caption>
     </image:image>
   </url>
 
