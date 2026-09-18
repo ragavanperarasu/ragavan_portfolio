@@ -36,7 +36,10 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
+          <Route path="/open-source" element={<Projects group="mygct" />} />
+          <Route path="/client-work" element={<Projects group="client" />} />
+          {/* Old single-projects URL still works. */}
+          <Route path="/project" element={<Navigate to="/open-source" />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} />

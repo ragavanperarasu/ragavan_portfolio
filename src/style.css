@@ -1363,3 +1363,32 @@ button:focus {
     padding: 5px 11px 5px 9px;
   }
 }
+
+/* Free vs paid badge on each work row. */
+.work-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 4px 12px;
+}
+
+.work-tag-free {
+  color: #7ee2b8;
+  background: rgba(53, 208, 127, 0.12);
+  border: 1px solid rgba(53, 208, 127, 0.35);
+}
+
+.work-tag-paid {
+  color: #ffd27a;
+  background: rgba(245, 165, 36, 0.13);
+  border: 1px solid rgba(245, 165, 36, 0.4);
+}
+
+/* Client Work nav link reads as the commercial one. */
+.nav-link-client {
+  color: #ffd27a !important;
+}

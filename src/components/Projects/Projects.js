@@ -5,7 +5,7 @@ import { BsGooglePlay, BsGithub } from "react-icons/bs";
 import Particle from "../Particle";
 import LivePreview from "./LivePreview";
 import TechStack from "./TechStack";
-import { projects, groups } from "./projectData";
+import { projects } from "./projectData";
 
 const LINK_ICONS = {
   site: FiExternalLink,
@@ -27,6 +27,13 @@ function ProjectRow({ project, index }) {
           <span className="work-status">
             <span className="work-status-dot" />
             {project.status}
+          </span>
+          <span
+            className={`work-tag work-tag-${
+              project.group === "client" ? "paid" : "free"
+            }`}
+          >
+            {project.group === "client" ? "Paid Project" : "Free & Open Source"}
           </span>
           {project.client && (
             <span className="work-client">{project.client}</span>
@@ -73,42 +80,54 @@ function ProjectRow({ project, index }) {
   );
 }
 
-function Projects() {
+const PAGES = {
+  mygct: {
+    eyebrow: "Open Source",
+    title: (
+      <>
+        Built free for my <strong className="purple">college</strong>
+      </>
+    ),
+    sub: "An open-source ecosystem I built and run for Government College of Technology, Coimbatore. Free for every student and staff member, no licence, no fee. Every preview below is the live site.",
+  },
+  client: {
+    eyebrow: "Client Work",
+    title: (
+      <>
+        Delivered for <strong className="purple">paying clients</strong>
+      </>
+    ),
+    sub: "Commissioned, paid work for real businesses — live storefronts and catalogues taking real orders and real payments, handed over with admin panels the owners run themselves.",
+  },
+};
+
+function Projects({ group: groupId = "mygct" }) {
+  const page = PAGES[groupId];
+
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container className="work-container">
         <header className="work-header">
-          <p className="work-eyebrow">Portfolio</p>
-          <h1 className="work-page-title">
-            Things I've <strong className="purple">shipped</strong>
-          </h1>
-          <p className="work-page-sub">
-            Products running in production — a campus ecosystem used across my
-            college, and storefronts built for real businesses. Every preview
-            below is the live site.
-          </p>
+          <p className="work-eyebrow">{page.eyebrow}</p>
+          <h1 className="work-page-title">{page.title}</h1>
+          <p className="work-page-sub">{page.sub}</p>
         </header>
 
-        {groups.map((group) => {
-          const items = projects.filter((p) => p.group === group.id);
-          return (
-            <section key={group.id} className="work-group">
-              <div className="work-group-head">
-                <span className="work-group-label">{group.label}</span>
-                <h2 className="work-group-title">{group.title}</h2>
-                <p className="work-group-blurb">{group.blurb}</p>
-              </div>
-
-              {items.map((project, i) => (
-                <ProjectRow key={project.id} project={project} index={i} />
-              ))}
-            </section>
-          );
-        })}
+        <section className="work-group">
+          {projects
+            .filter((p) => p.group === groupId)
+            .map((project, i) => (
+              <ProjectRow key={project.id} project={project} index={i} />
+            ))}
+        </section>
 
         <div className="work-footer-cta">
-          <p>Want something like this built?</p>
+          <p>
+            {groupId === "client"
+              ? "Want something like this built for your business?"
+              : "Want to see how these are built?"}
+          </p>
           <a
             className="work-btn work-btn-lg"
             href="https://github.com/ragavanperarasu/"
